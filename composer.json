@@ -1,0 +1,20 @@
+{
+    "name" : "dcylabs/symfony-twig-helper",
+    "description" : "A Twig Bundle that help you with rights in Symfony",
+    "type" : "symfony-bundle",
+    "authors" : [{
+        "name" : "DCYLabs",
+        "email" : "dcylabs@gmail.com"
+    }],
+    "keywords" : [
+        "symfony twig roles security helper bundle"
+    ],
+    "license" : [
+        "MIT"
+    ],
+    "autoload" : {
+        "psr-0" : {
+            "Dcylabs\\TwigBundle" : "src"
+        }
+    }
+}
