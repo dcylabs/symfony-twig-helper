@@ -6,7 +6,7 @@ Installing Dcylabs Twig Bundle
 ```
 composer require dcylabs/symfony-twig-helper dev-master
 ```
-
+OR
 ``` json
   "require": {
       "dcylabs/symfony-twig-helper": "dev-master"
