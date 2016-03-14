@@ -11,7 +11,7 @@ class DcylabsTwigExtension extends \Twig_Extension
     public function getFilters()
     {
         return array(
-            new \Twig_SimpleFunction('checkRoles', array($this, 'checkRoles')),
+            new \Twig_SimpleFilter('checkRoles', array($this, 'checkRoles')),
         );
     }
 

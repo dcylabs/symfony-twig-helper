@@ -1,15 +1,15 @@
 services:
     dcylabs_twig.twig.serviceProvider:
         class: Dcylabs\TwigBundle\Service\Twig\DcylabsTwigServiceProvider
-        arguments: [@service_container]
+        arguments: ['@service_container']
 
     dcylabs_twig.twig.dcylabs_twig_extension:
       class: Dcylabs\TwigBundle\Twig\DcylabsTwigExtension
       calls:
-        - [ setTwigGlobals, [ @service_container ] ]
+        - [ setTwigGlobals, [ '@service_container' ] ]
       tags:
         - {name: twig.extension}
 
     dcylabs_twig.path_roles:
         class: Dcylabs\TwigBundle\Service\PathRoles
-        arguments: [@service_container, @security.access_map]
+        arguments: ['@service_container', '@security.access_map']
